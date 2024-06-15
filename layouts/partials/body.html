@@ -1,0 +1,34 @@
+<div class="landingpage">
+  <div class="grid-container fivetoseven" role="main">
+    <div class="item" aria-label="Avatar">
+      <section id="avatar">
+        <img class="avatar" src="{{ .Site.Params.avatar }}" alt="{{ path.Base .Site.Params.avatar }}" />
+      </section>
+    </div>
+    <div class="grid-container full autocenter">
+      <section id="bio" aria-label="Biography">
+        <h1 class="h3-like" aria-level="1" aria-label="Name">
+          {{ .Site.Params.author }}
+        </h1>
+        <p class="reset-margin" title="About" aria-label="About">
+          {{ .Site.Params.bio | markdownify }}
+        </p>
+      </section>
+      <section id="contact" aria-label="Contact">
+        <div class="icons" aria-label="Links">
+          <h2 class="h3-like" aria-label="Link Icons">
+            <a class="icon" href="https://www.linkedin.com/in/mohabusama/" target="_blank" rel="noopener">
+              <i class="fab fa-linkedin-in" title="Linkedin" aria-label="Go to Linkedin."></i>
+            </a>
+            <a class="icon" href="https://github.com/mohabusama" target="_blank" rel="noopener">
+              <i class="fab fa-github" title="Github" aria-label="Go to Github."></i>
+            </a>
+            <a class="icon" href="https://github.com/mohabusama" target="_blank" rel="noopener">
+              <i class="fas fa-file" title="Resume" aria-label="Download my resume."></i>
+            </a>
+          </h2>
+        </div>
+      </section>
+    </div>
+  </div>
+</div>
